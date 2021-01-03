@@ -36,11 +36,10 @@ class Linear_Regression:
         y_predicted = np.dot(X, self.weights) + self.bias
         return y_predicted
     
-    def b(self):
-        b = self.weights
-        return b
-        
-    
-    def a(self):
-        a = self.bias
-        return a
+    def _weights(self):
+        _weights = self.weights
+        return _weights[0]
+             
+    def _bias(self):
+        _bias = self.bias
+        return _bias
